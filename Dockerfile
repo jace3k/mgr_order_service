@@ -20,5 +20,4 @@ EXPOSE 3000
 
 CMD rm -f /app/tmp/pids/server.pid && \
     $rails db:migrate && \
-    $rails db:seed && \
     $rails s -b 0.0.0.0 -p 3000
