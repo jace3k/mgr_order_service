@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 orders = []
 (1..1000).each { |id|
-  (1..((id % 10) + 15)).each { |order|
+  (1..(id % 5)).each { |order|
     orders.append({
       quantity: 50,
       product_id: id,
